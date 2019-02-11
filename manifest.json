@@ -1,0 +1,12 @@
+{
+  "name": "Sweclockers Dark/Grey Theme",
+  "version": "0.0.0.1",
+  "description": "A darker theme for Sweclockers.com",
+  "content_scripts": [
+    {
+      "matches": ["*://*.sweclockers.com/*"],
+      "css": ["sweclockers.css"]
+    }
+  ],
+  "manifest_version": 2
+}

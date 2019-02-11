@@ -1,0 +1,157 @@
+/* ==UserStyle==
+@name         Dark Gray Theme for Sweclockers.com
+@namespace    github.com/openstyles/stylus
+@version      0.0.1
+@description  A darker theme for Sweclockers.com
+@author       wirlez <wirlez@outlook.com> (https://github.com/johanbx)
+==/UserStyle== */
+
+@-moz-document domain("sweclockers.com") {
+/* VARIABLES */
+:root {
+  --lighter-gray: #F0F0F0;
+  --light-gray: lightgray;
+  --pitch-black: black;
+  --dim-gray: dimgray;
+  --darker-gray: #404040;
+  --prestine-white: white;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+
+/* FONT */
+ul.menu.root > li.isSelected > a {
+  font-weight: bold;
+}
+
+/* COLORS */
+a,
+.time,
+.date,
+.hotGallery .hot,
+.stepItem
+{
+  color: var(--lighter-gray) !important;
+}
+
+body,
+ul.menu.root > li > a,
+.forumWidget .mwHead p,
+.meta.details,
+.meta.activity,
+.whiteHeader *,
+.s5fieldset > legend
+{
+  color: var(--light-gray) !important;
+}
+
+.stepItem.isSelected {
+  color: var(--darker-gray) !important;
+}
+
+/* BACKGROUND */
+body,
+.main,
+.mainMenu .shadow,
+.banner,
+.footer .top.clear
+{
+  background: var(--pitch-black) !important;
+}
+
+ul.menu.root > li,
+.head > .row > .cell,
+.bg-orange,
+.button,
+.fluid .mainContent,
+.orangeInfoBox,
+.commentsBubble,
+.errorBox,
+.bbQuote,
+.postHeader *,
+.forumForm > .body,
+.subforums > a
+{
+  background: var(--dim-gray) !important;
+}
+
+.body > .row > .cell,
+.forumWidget,
+.infoTextWindow,
+.forumResultPost,
+.forumPost .cell,
+.gp-subject-group
+{
+  background: var(--darker-gray) !important;
+}
+
+/* VISIBLITY */
+iframe
+{
+  visibility: hidden;
+}
+
+.ad,
+.geeksShop,
+.prisjaktPopular
+{
+  display: none;
+}
+
+.header .banner {
+  min-height: unset !important;
+  height: 10px;
+}
+
+/* ICONS */
+.comments > .icon,
+.plComments > .plLabelIcon,
+.mwComments > .mwLabelIcon
+{
+  background-position: -75px -100px !important;
+}
+.plLabel > .plLabelIcon,
+.mwLabel > .mwLabelIcon {
+  background-position: -25px -100px !important;
+}
+.rssFeeds .icon {
+  background-position: -25px -125px !important;
+}
+
+/* BORDERS */
+.button,
+.stepItem.isSelected,
+.forumResultPost {
+  border-radius: 5px;
+}
+.footer .top.clear {
+  border-top: none;
+}
+.commentsBubble,
+.errorBox, 
+.forumForm > .head {
+  border-color: var(--prestine-white) !important;
+}
+.carousel .nav.right .handle {
+  border-left: 10px solid var(--prestine-white) !important;
+}
+.carousel .nav.left .handle {
+  border-right: 10px solid var(--prestine-white) !important;
+}
+.forumPost .postBody .row .cell:first-child {
+  border-right: 1px solid var(--light-gray);
+}
+
+/* SPECIAL */
+.videoPush,
+.popularGalleries {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+}
